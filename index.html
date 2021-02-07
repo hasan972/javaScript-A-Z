@@ -213,14 +213,38 @@ document.write("sum = " + sum);
 */
 <!--object--->
 //create an object
+//how to print the value of an object
 var student ={
   name: "Rakibul Hasan",
   age: 24,
   cgpa:3.92,
   lang: ["Bangla","English","Hindi"]
 }
-document.write(student.name);
+document.write(student.name+"<br/>");
 
+//for so many student information we need a constructor->constructor is a special kind of function
+function Student(name,age,cgpa,lang){
+  this.name = name;
+  this.age = age;
+  this.cgpa = cgpa;
+  this.lang = lang;
+  //adding function inside a constructor that's way we easily print the information
+  this.display = function(){
+    document.write(this.name+"<br/>");
+    document.write(this.age+"<br/>");
+    document.write(this.lang);
+  }
+}
+//create a multiple object and add so many student info
+var student1 = new Student("Rakibul Hasan",23,3.24,["Bangla", "Hindi","English"]);
+var student2 = new Student("Hasan",24,3.34,["Napali"])
+//write so many code for output that's way using display()function
+document.write(student1.name+"<br/>");
+document.write(student2.name+"<br/>");
+document.write(student2.lang+"<br/>");
+
+//for display function
+student1.display();
 
 </script>
 
