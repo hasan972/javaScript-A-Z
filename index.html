@@ -264,14 +264,21 @@ Math.random() * 6; //always into the 0-1 number
 //If the guess number matches random number
 //Run the game for 5 timeout
 //show the number of wons and losts
+var numOfWon = 0;
+var numOfLost = 0;
+for(var i = 0; i<5; i++){
  var guessNumber = parseInt(prompt("Enter Your Guess Number 1 to 5: "));
  var randomNumber = Math.floor(Math.random()*5)+1;
  if(guessNumber == randomNumber){
-   document.write("You Have Won");
+document.write("You Have Won"+"<br/>");
+   numOfWon++;
  } else{
-   document.write("You Have Lost, Random Number was: "+ randomNumber);
+   document.write("You Have Lost, Random Number was: "+ randomNumber + "<br/>");
+   numOfLost++;
  }
-
+}
+document.write("Total Number Of Won: " + numOfWon + "<br/>");
+document.write("Total Number Of Lost: " + numOfLost+"<br/>");
 
 </script>
 
