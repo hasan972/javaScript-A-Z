@@ -1,7 +1,12 @@
-function mm1(){
-  alert("Hi Boss");
-}
-
+//304 number to 308
+// function mm1(){
+//   alert("Hi Boss");
+// }
+//
+// function para(){
+//   alert("Hi i am a paragrap");
+// }
 function para(){
-  alert("Hi i am a paragrap");
+var myVar =  document.querySelector("#paraid");
+  myVar.innerHTML ="You have click the buton";
 }
