@@ -27,6 +27,11 @@
 var heading3 = document.createElement("h2");//create element
 var text = document.createTextNode("This is heading3");
 heading3.appendChild(text);
-//ad the text to html code 
+//ad the text to html code
 var myDiv = document.getElementById("my");
 myDiv.appendChild(heading3);
+
+
+//Remove h2=Good Bye TagName
+var heading2 = document.getElementsByTagName("h2")[1];
+myDiv.removeChild(heading2);
