@@ -66,3 +66,11 @@ function removeStyle(){
   myVar.remove("para-style");
 }
 */
+// i use anonimus function
+var he = document.querySelector("h3");
+he.addEventListener("mouseover",function(){
+  he.classList.add("my-style");
+});
+he.addEventListener("mouseout",function(){
+  he.classList.remove("my-style");
+});
