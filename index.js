@@ -56,3 +56,13 @@ function removeStyle(){
   var myVar = document.querySelector("#paraid");
   myVar.remove("para-style");
 }
+/* Add style and remove style sort code
+var myVar = document.querySelector("#paraid");
+function addStyle(){
+  myVar.classList.add("para-style");
+  myVar.innerHTML="Hi bro now i am change and my colour will be red thx java my script";
+}
+function removeStyle(){
+  myVar.remove("para-style");
+}
+*/
