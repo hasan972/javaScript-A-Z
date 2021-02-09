@@ -24,14 +24,13 @@
 
 
 //create a html tag using javascript
+/*
 var heading3 = document.createElement("h2");//create element
 var text = document.createTextNode("This is heading 3");
 heading3.appendChild(text);
 //ad the text to html code
 var myDiv = document.getElementById("my");
 myDiv.appendChild(heading3);
-
-
 
 //Remove h2=Good Bye TagName
 var heading2 = document.getElementsByTagName("h2")[2];
@@ -42,3 +41,18 @@ var text0 = document.createTextNode("Add first heading 0");
 heading0.appendChild(text0);
 var heading1 = document.getElementsByTagName("h2")[1];
 myDiv.insertBefore(heading0, heading1 );
+*/
+function addStyle(){
+  var myVar = document.querySelector("#paraid");
+  // myVar.style.color ="red";
+  // myVar.style.fontSize="3rem";
+  // myVar.style.fontWeight = "bold";
+  // myVar.style.fontStyle= "italic";
+  // myVar.innerHTML="Hi bro now i am change and my colour will be red thx java my script";
+  myVar.classList.add("para-style");
+  myVar.innerHTML="Hi bro now i am change and my colour will be red thx java my script";
+}
+function removeStyle(){
+  var myVar = document.querySelector("#paraid");
+  myVar.remove("para-style");
+}
