@@ -69,7 +69,7 @@ function removeStyle(){
   myVar.remove("para-style");
 }
 */
-/* //mouseout and mouseover 
+/* //mouseout and mouseover
 // i use anonimus function
 var he = document.querySelector("h3");
 he.addEventListener("mouseover",function(){
@@ -79,3 +79,32 @@ he.addEventListener("mouseout",function(){
   he.classList.remove("my-style");
 });
 */
+
+
+//Animation and audio part is given below
+
+for( var i = 0; i < 3; i++){
+  document.querySelectorAll(".myButton")[i].addEventListener("click",function (){
+    var text = this.innerHTML;
+    audioPlay(text);
+  });
+}
+//work the element
+function audioPlay(text){
+switch (text) {
+    case "First":
+      var audio = new Audio("sounds/a.mp3");
+      audio.play();
+      break;
+    case "Second":
+      var audio = new Audio("sounds/b.m4a");
+      audio.play();
+      break;
+      case "Third":
+        var audio = new Audio("sounds/a.mp4");
+        audio.play();
+        break;
+  default:
+
+ }
+}
