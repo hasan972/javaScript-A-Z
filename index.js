@@ -42,6 +42,8 @@ heading0.appendChild(text0);
 var heading1 = document.getElementsByTagName("h2")[1];
 myDiv.insertBefore(heading0, heading1 );
 */
+
+/*//Same work for tag change..
 function addStyle(){
   var myVar = document.querySelector("#paraid");
   // myVar.style.color ="red";
@@ -56,6 +58,7 @@ function removeStyle(){
   var myVar = document.querySelector("#paraid");
   myVar.remove("para-style");
 }
+/*
 /* Add style and remove style sort code
 var myVar = document.querySelector("#paraid");
 function addStyle(){
@@ -66,6 +69,7 @@ function removeStyle(){
   myVar.remove("para-style");
 }
 */
+/* //mouseout and mouseover 
 // i use anonimus function
 var he = document.querySelector("h3");
 he.addEventListener("mouseover",function(){
@@ -74,3 +78,4 @@ he.addEventListener("mouseover",function(){
 he.addEventListener("mouseout",function(){
   he.classList.remove("my-style");
 });
+*/
