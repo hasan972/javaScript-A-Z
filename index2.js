@@ -26,3 +26,10 @@ ctx.stroke();
   number.forEach(function(x){
   console.log(x)
 })
+// one array to go another array and the answer is squere
+ var number1 = [10,20,30,40,50,100];
+ var squreNumber1 = [];
+ number1.forEach(function(x){
+   squreNumber1.push(x*x);
+ })
+ console.log(squreNumber1);
