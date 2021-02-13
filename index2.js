@@ -33,3 +33,16 @@ ctx.stroke();
    squreNumber1.push(x*x);
  })
  console.log(squreNumber1);
+
+ //mapfunction
+ var array = [2,3,4,10,20,30];
+ var squreArray = array.map(function(x){
+   return x*x;
+ })
+ //for filter
+ var filterArray = array.filter(function(x){
+   return x>10; //hare is tha condition
+ })
+ console.log("Main array number: "+array);
+ console.log("SqureArray number: "+squreArray);
+ console.log("Filter the array: "+filterArray);
