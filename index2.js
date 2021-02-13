@@ -19,7 +19,7 @@ ctx.fillStyle = "red";
 ctx.fill();
 ctx.stroke();
 */
-
+/*
 //forEach
  var number = [10,20,30,40,50];
 
@@ -46,3 +46,13 @@ ctx.stroke();
  console.log("Main array number: "+array);
  console.log("SqureArray number: "+squreArray);
  console.log("Filter the array: "+filterArray);
+*/
+  //Arrow mapfunction
+
+
+  function massage1(){
+    return "Hi";
+  }
+  const massage = () => "hi me Rakibul Hasan";
+  console.log(massage1());
+  console.log(massage());
