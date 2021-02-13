@@ -48,11 +48,20 @@ ctx.stroke();
  console.log("Filter the array: "+filterArray);
 */
   //Arrow mapfunction
-
-
   function massage1(){
     return "Hi";
   }
   const massage = () => "hi me Rakibul Hasan";
   console.log(massage1());
   console.log(massage());
+  //add using the arrow functuion
+//Traditional way
+function add(num1,num2){
+  sum = num1+num2;
+}
+add(10,10)
+console.log(sum);
+
+//arraw function way
+const add1 = (num1,num2) => num1 + num2;
+console.log(add1(10,11));
