@@ -1,3 +1,4 @@
+/*
 var c = document.getElementById("myCanvas");
 
 var ctx = c.getContext("2d");//all work done this methode
@@ -17,3 +18,11 @@ ctx.arc(centerx,centery,60,0,2*Math.PI,false);
 ctx.fillStyle = "red";
 ctx.fill();
 ctx.stroke();
+*/
+
+//forEach
+ var number = [10,20,30,40,50];
+
+  number.forEach(function(x){
+  console.log(x)
+})
