@@ -68,5 +68,3 @@ console.log(sum);
 const add1 = (num1,num2) => num1 + num2;
 console.log(add1(10,11));
 */
-const add1 = (num1,num2) => num1 + num2;
-console.log(add1(10,11));
