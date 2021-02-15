@@ -51,3 +51,14 @@ const students = {
   regId : 100
 }
 studentInfo3 (students)
+
+//find and findIndex
+let num = [3,7,5,1,2,0];
+const evenNumber = (value,imdex,array) => {
+  if(value%2===0)
+  return value;
+}
+const firstEvenNumber = num.find(evenNumber);
+const firstIndexNumvber = num.findIndex(evenNumber);
+console.log(firstEvenNumber)
+console.log(firstIndexNumvber)
