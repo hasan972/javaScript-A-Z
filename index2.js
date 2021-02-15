@@ -47,6 +47,8 @@ ctx.stroke();
  console.log("SqureArray number: "+squreArray);
  console.log("Filter the array: "+filterArray);
 */
+
+/*
   //Arrow mapfunction
   function massage1(){
     return "Hi";
@@ -63,5 +65,8 @@ add(10,10)
 console.log(sum);
 
 //arraw function way
+const add1 = (num1,num2) => num1 + num2;
+console.log(add1(10,11));
+*/
 const add1 = (num1,num2) => num1 + num2;
 console.log(add1(10,11));
