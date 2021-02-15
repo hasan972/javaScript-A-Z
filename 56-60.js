@@ -62,3 +62,25 @@ const firstEvenNumber = num.find(evenNumber);
 const firstIndexNumvber = num.findIndex(evenNumber);
 console.log(firstEvenNumber)
 console.log(firstIndexNumvber)
+
+//find and findIndex for any objected
+const studentInfo4 =[
+  {
+    Height : 5.5,
+    waight : 50
+  },
+  {
+    Height : 4.5,
+    waight : 60
+  },
+  {
+    Height : 6.0,
+    waight : 70
+  },
+  {
+    Height : 6.2,
+    waight : 80
+  }
+]
+console.log(studentInfo4.find (x => x.Height > 6))
+console.log(studentInfo4.findIndex (x => x.Height > 6))
