@@ -12,6 +12,7 @@ let a = 0, b = 20;
 [a,b] = [b,a]
 console.log(a,b)
 */
+/*
 //ES6 objective destructure
 const studentsInfo ={
   Name : 'Rakibul Hasan',
@@ -84,3 +85,42 @@ const studentInfo4 =[
 ]
 console.log(studentInfo4.find (x => x.Height > 6))
 console.log(studentInfo4.findIndex (x => x.Height > 6))
+*/
+/*
+import {text, setText} from './myModule.js'
+console.log(text)
+setText("Good Bye");
+console.log(text)
+//Another way
+import{massage} from './myModule.js'
+console.log(massage)
+//Another way
+import{t as massage1} from './myModule.js'
+console.log(massage1)
+*/
+//Make class, constructor, objective
+//The constructor() method is a special method for creating and initializing objects created within a class.
+
+//The constructor() method is called automatically when a class is initiated, and it has to have the exact name "constructor", in fact, if you do not have a constructor method, JavaScript will add an invisible and empty constructor method.
+
+ class student {
+   constructor(id, name){
+     this.id = id;
+     this.name = name;
+   }
+   //set the name to use set methode
+   set studentName(name){
+     this.name = name;
+   }
+   //get is use for get the object value form the class
+   get studentInfoo(){
+     return this.id + " "+ this.name;
+   }
+ }
+ let st = new student (16201100, "Shanto");
+ console.log(st.id)
+ console.log(st.name)
+
+ st.studentName = "Hasan";
+ console.log(st.name)
+ console.log(st.studentInfoo)
