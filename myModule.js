@@ -13,3 +13,4 @@ export {tex as massage};
 //Another way
 
 export let t = "One another way";
+//setTimeout -> Asynchronous function ES6
