@@ -54,3 +54,41 @@
     console.log(rej);
   });
 */
+
+//using promise function for task 1-4
+const taskOne = () => {
+  return new Promise((resolve, reject) =>{
+    resolve("task-1 is compleate");
+  });
+};
+const taskTwo = () =>{
+  return new Promise((resolve, reject) =>{
+    //for API
+    setTimeout(() =>{
+      resolve("task-2 is compleate");
+    }, 2000);
+  });
+};
+const taskThree = () =>{
+  return new Promise((resolve, reject) =>{
+    reject("task-3 is compleate");
+  });
+};
+//task fore is not working because we  using reject parameter
+const taskFore = () =>{
+  return new Promise((resolve, reject)=>{
+    resolve("task-4 is compleate");
+  });
+};
+
+taskOne()
+//for resolve
+.then((res) => console.log(res))
+.then(taskTwo)
+.then((res) => console.log(res))
+.then(taskThree)
+.then((res) => console.log(res))
+.then(taskFore)
+.then((res) => console.log(res))
+//for reject
+.catch((err) => console.log(err));
