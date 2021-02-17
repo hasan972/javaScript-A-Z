@@ -1,25 +1,35 @@
 //call back haigher order function
 
- const taskOne = () =>{
+ const taskOne = (callback) =>{
    console.log("Task-1");
+   callback();
  };
- const taskTwo =() =>{
+ const taskTwo =(callback) =>{
    //using anonimus function
    setTimeout(() =>{
-     console.log("Task-2. Data Loading");
-   }, 0);
+     console.log("Task-2. Data Loading..");
+     callback();
+   }, 4000);
+
  };
- const taskThree =() =>{
+ const taskThree =(callback) =>{
    console.log("Task-3");
+   callback();
  };
- const taskFore =() =>{
+ const taskFore =(callback) =>{
    console.log("Task-4");
+   callback();
  };
  const taskFive =() =>{
    console.log("Task-5");
- }
- taskOne();
- taskTwo();
- taskThree();
- taskFore();
- taskFive();
+ };
+
+ taskOne(function f1(){
+   taskTwo(function f2(){
+     taskThree(function f3(){
+       taskFore(function f4(){
+         taskFive();
+       })
+     });
+   });
+ });
