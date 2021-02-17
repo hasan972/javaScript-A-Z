@@ -24,10 +24,10 @@
    console.log("Task-5");
  };
 
- taskOne(function f1(){
-   taskTwo(function f2(){
-     taskThree(function f3(){
-       taskFore(function f4(){
+ taskOne(() => {
+   taskTwo(() => {
+     taskThree(() => {
+       taskFore(() => {
          taskFive();
        })
      });
