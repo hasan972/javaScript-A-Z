@@ -34,6 +34,8 @@
    });
  });
  */
+
+ /*
 //create promise and promise 3 type the number one is pending and number two is resolve and the last is rejact
  const promise1 = new Promise((resolve, reject) =>{
    let compleatedPromise = false;
@@ -43,7 +45,7 @@
      reject("not compleated promise");
    }
  });
-
+//true ar jonno then use korbo and false ar jonno catch use korbo promise function working eather then or catch
   promise1
   // .then(res => {
   //   console.log(res);
@@ -51,3 +53,4 @@
   .catch(rej =>{
     console.log(rej);
   });
+*/
