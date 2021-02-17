@@ -81,14 +81,34 @@ const taskFore = () =>{
   });
 };
 
-taskOne()
-//for resolve
-.then((res) => console.log(res))
-.then(taskTwo)
-.then((res) => console.log(res))
-.then(taskThree)
-.then((res) => console.log(res))
-.then(taskFore)
-.then((res) => console.log(res))
-//for reject
-.catch((err) => console.log(err));
+// taskOne()
+// //for resolve
+// .then((res) => console.log(res))
+// .then(taskTwo)
+// .then((res) => console.log(res))
+// .then(taskThree)
+// .then((res) => console.log(res))
+// .then(taskFore)
+// .then((res) => console.log(res))
+// //for reject
+// .catch((err) => console.log(err));
+
+
+//Another way to print the taskOne
+//async ans await
+//erroe handeling usingtry catch
+const callAllTask = async () =>{
+  try{
+  const t1 = await taskOne();
+  console.log(t1);
+  const t2 = await taskTwo();
+  console.log(t2);
+  const t3 = await taskThree();
+  console.log(t3);
+  const t4 = await taskFore();
+  console.log(t4);
+}catch (error){
+  console.log(error);
+ }
+};
+callAllTask();
