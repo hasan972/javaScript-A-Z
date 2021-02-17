@@ -1,5 +1,5 @@
 //call back haigher order function
-
+/*
  const taskOne = (callback) =>{
    console.log("Task-1");
    callback();
@@ -33,3 +33,21 @@
      });
    });
  });
+ */
+//create promise and promise 3 type the number one is pending and number two is resolve and the last is rejact
+ const promise1 = new Promise((resolve, reject) =>{
+   let compleatedPromise = false;
+   if (compleatedPromise){
+     resolve("completed promise");
+   }else{
+     reject("not compleated promise");
+   }
+ });
+
+  promise1
+  // .then(res => {
+  //   console.log(res);
+  // });
+  .catch(rej =>{
+    console.log(rej);
+  });
